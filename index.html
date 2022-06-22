@@ -12,20 +12,20 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Intro section with dropdown navigation</title>
   </head>
-  <body>
+  <body class="ff-serif">
     <header>
       <div>
         <a href="#"><img src="./images/logo.svg" alt="snap" class="logo" /></a>
@@ -34,7 +34,84 @@
       <button class="mobile-nav-toggle" aria-controls="primary-navigation">
         <span class="sr-only" aria-expanded="false">Menu</span>
       </button>
+
+      <nav>
+        <ul class="primary-navigation">
+          <li>
+            <a href="#"
+              >Featrues<img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="#" class="submenu-item"
+                ><img src="images/icon-todo.svg" alt="icon-todo" />
+                <span>Todo List</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="submenu-item"
+                ><img src="images/icon-calendar.svg" alt="icon-calendar" />
+                <span>Calender</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="submenu-item"
+                ><img src="images/icon-reminders.svg" alt="icon-reminders" />
+                <span>Reminders</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="submenu-item"
+                ><img src="images/icon-planning.svg" alt="icon-planning" />
+                <span>Planning</span></a
+              >
+            </li>
+          </ul>
+          <li>
+            <a href="#"
+              >Company<img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+          </li>
+          <ul>
+            <li>
+              <a href="#" class="submenu-item company-submenu">History</a>
+            </li>
+            <li>
+              <a href="#" class="submenu-item company-submenu">Our team</a>
+            </li>
+            <li><a href="#" class="submenu-item company-submenu">Blog</a></li>
+          </ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <ul class="secondary-navigation">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <main>
+      <div class="hero-img">
+        <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" />
+      </div>
+      <div class="hero-text">
+        <h1>Make <br />remote work</h1>
+        <p class="">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="">Learn More</a>
+        <figure class="company-logo">
+          <img src="./images/client-databiz.svg" alt="client-databiz" />
+          <img src="./images/client-audiophile.svg" alt="client-audiophile" />
+          <img src="./images/client-meet.svg" alt="client-meet" />
+          <img src="./images/client-maker.svg" alt="client-maker" />
+        </figure>
+      </div>
+    </main>
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
