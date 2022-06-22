@@ -26,7 +26,7 @@
     <title>Intro section with dropdown navigation</title>
   </head>
   <body class="ff-serif">
-    <header>
+    <header class="primary-header flex">
       <div>
         <a href="#"><img src="./images/logo.svg" alt="snap" class="logo" /></a>
       </div>
@@ -35,8 +35,8 @@
         <span class="sr-only" aria-expanded="false">Menu</span>
       </button>
 
-      <nav>
-        <ul class="primary-navigation">
+      <nav class="navigation flex">
+        <ul class="primary-navigation flex">
           <li>
             <a href="#"
               >Featrues<img src="./images/icon-arrow-down.svg" alt=""
@@ -73,7 +73,7 @@
               >Company<img src="./images/icon-arrow-down.svg" alt=""
             /></a>
           </li>
-          <ul>
+          <ul class="submenu">
             <li>
               <a href="#" class="submenu-item company-submenu">History</a>
             </li>
@@ -86,14 +86,14 @@
           <li><a href="#">About</a></li>
         </ul>
 
-        <ul class="secondary-navigation">
+        <ul class="secondary-navigation flex">
           <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
+          <li><a href="#" class="cta registeration-btn">Register</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <div class="hero-img">
         <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" />
       </div>
@@ -103,7 +103,7 @@
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <a href="#" class="">Learn More</a>
+        <a href="#" class="cta">Learn More</a>
         <figure class="company-logo">
           <img src="./images/client-databiz.svg" alt="client-databiz" />
           <img src="./images/client-audiophile.svg" alt="client-audiophile" />

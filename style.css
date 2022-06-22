@@ -64,15 +64,6 @@ select {
     font: inherit;
 }
 
-ol,
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
 
@@ -92,6 +83,21 @@ a {
 
 /* general */
 
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.d-block {
+    display: block;
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -106,12 +112,100 @@ a {
 
 /* typography */
 
-.ff-serif {
-    font-family: var(--ff-serif);
+.cta {
+    padding: 0.5em 1em;
+    
+    font-weight: 600;
+    border-radius: 0.5em;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
 }
 
-.clr-white { color: var(--clr-white);} 
-.clr-gray { color: var(--clr-gray);} 
-.clr-dark { color: var(--clr-dark);} 
 
-.uppercase { text-transform: uppercase;}
+/* Primay header  */
+.logo {
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.navigation {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.primary-navigation {
+    list-style: none;
+}
+
+.primary-navigation a {
+    color: var(--clr-gray);
+    text-decoration: none;
+}
+
+.submenu {
+    list-style: none;
+}
+
+.secondary-navigation {
+    list-style: none;
+}
+
+.secondary-navigation a {
+    color: var(--clr-gray);
+    text-decoration: none;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.registeration-btn {
+    background-color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    margin-top: 1rem;
+}
+
+@media (max-width: 35rem) {
+    .navigation {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 98%);
+        justify-content: center;
+        /* transform: translateX(100%); */
+        transition: transform 500ms ease-in-out;
+    }
+
+    .navigation[data-visible="true"] {
+        transform: translateX(0);
+    }
+
+    .primary-navigation {
+        flex-direction: column;
+    }
+
+    .secondary-navigation {
+        flex-direction: column;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        background: transparent;
+        background-image: url(./images/icon-menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+}
