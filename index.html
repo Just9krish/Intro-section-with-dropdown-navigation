@@ -41,11 +41,11 @@
       <nav class="navigation flex" id="navigation" data-visible="false">
         <ul class="primary-navigation flex">
           <li>
-            <a href="#"
-              >Featrues<img src="./images/icon-arrow-down.svg" alt=""
+            <a href="#" aria-expanded="false" class="feature-toggle"
+              >Featrues<img src="./images/icon-arrow-down.svg" class="feature-arrow-img" alt=""
             /></a>
           </li>
-          <ul class="submenu">
+          <ul class="submenu" id="submenu" data-visible="false">
             <li>
               <a href="#" class="submenu-item"
                 ><img src="images/icon-todo.svg" alt="icon-todo" />
@@ -72,11 +72,11 @@
             </li>
           </ul>
           <li>
-            <a href="#"
-              >Company<img src="./images/icon-arrow-down.svg" alt=""
+            <a href="#" aria-expanded="false" class="company-toggle"
+              >Company<img src="./images/icon-arrow-down.svg" class="comapany-arrow-img" alt=""
             /></a>
           </li>
-          <ul class="submenu">
+          <ul class="submenu company-submenu" id="submenu" data-visible="false">
             <li>
               <a href="#" class="submenu-item company-submenu">History</a>
             </li>
@@ -96,9 +96,9 @@
       </nav>
     </header>
 
-    <main class="container">
-      <div class="hero-img">
-        <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" />
+    <main class="">
+      <div class="hero-img-div">
+        <img src="./images/image-hero-mobile.png" class="hero-img" alt="image-hero-mobile" />
       </div>
       <div class="hero-text">
         <h1>Make <br />remote work</h1>
