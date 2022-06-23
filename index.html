@@ -23,6 +23,9 @@
     <!-- Css link -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- js link -->
+    <script src="./js/navigation.js" defer></script>
+
     <title>Intro section with dropdown navigation</title>
   </head>
   <body class="ff-serif">
@@ -31,11 +34,11 @@
         <a href="#"><img src="./images/logo.svg" alt="snap" class="logo" /></a>
       </div>
 
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <button class="mobile-nav-toggle" aria-controls="navigation">
         <span class="sr-only" aria-expanded="false">Menu</span>
       </button>
 
-      <nav class="navigation flex">
+      <nav class="navigation flex" id="navigation" data-visible="false">
         <ul class="primary-navigation flex">
           <li>
             <a href="#"
