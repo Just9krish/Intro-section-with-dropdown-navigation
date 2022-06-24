@@ -40,51 +40,63 @@
 
       <nav class="navigation flex" id="navigation" data-visible="false">
         <ul class="primary-navigation flex">
-          <li>
-            <a href="#" aria-expanded="false" class="feature-toggle"
-              >Featrues<img src="./images/icon-arrow-down.svg" class="feature-arrow-img" alt=""
+          <li class="relative">
+            <a href="#" aria-expanded="false" class="feature-toggle flex"
+              >Featrues<img
+                src="./images/icon-arrow-down.svg"
+                class="feature-arrow-img"
+                alt=""
             /></a>
+
+            <ul class="submenu left" id="submenu" data-visible="false">
+              <li>
+                <a href="#" class="submenu-item"
+                  ><img src="images/icon-todo.svg" alt="icon-todo" />
+                  <span>Todo List</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="submenu-item"
+                  ><img src="images/icon-calendar.svg" alt="icon-calendar" />
+                  <span>Calender</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="submenu-item"
+                  ><img src="images/icon-reminders.svg" alt="icon-reminders" />
+                  <span>Reminders</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="submenu-item"
+                  ><img src="images/icon-planning.svg" alt="icon-planning" />
+                  <span>Planning</span></a
+                >
+              </li>
+            </ul>
           </li>
-          <ul class="submenu" id="submenu" data-visible="false">
-            <li>
-              <a href="#" class="submenu-item"
-                ><img src="images/icon-todo.svg" alt="icon-todo" />
-                <span>Todo List</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="submenu-item"
-                ><img src="images/icon-calendar.svg" alt="icon-calendar" />
-                <span>Calender</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="submenu-item"
-                ><img src="images/icon-reminders.svg" alt="icon-reminders" />
-                <span>Reminders</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="submenu-item"
-                ><img src="images/icon-planning.svg" alt="icon-planning" />
-                <span>Planning</span></a
-              >
-            </li>
-          </ul>
           <li>
-            <a href="#" aria-expanded="false" class="company-toggle"
-              >Company<img src="./images/icon-arrow-down.svg" class="comapany-arrow-img" alt=""
+            <a href="#" aria-expanded="false" class="company-toggle flex"
+              >Company<img
+                src="./images/icon-arrow-down.svg"
+                class="comapany-arrow-img"
+                alt=""
             /></a>
+
+            <ul
+              class="submenu company-submenu"
+              id="submenu"
+              data-visible="false"
+            >
+              <li>
+                <a href="#" class="submenu-item company-submenu">History</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item company-submenu">Our team</a>
+              </li>
+              <li><a href="#" class="submenu-item company-submenu">Blog</a></li>
+            </ul>
           </li>
-          <ul class="submenu company-submenu" id="submenu" data-visible="false">
-            <li>
-              <a href="#" class="submenu-item company-submenu">History</a>
-            </li>
-            <li>
-              <a href="#" class="submenu-item company-submenu">Our team</a>
-            </li>
-            <li><a href="#" class="submenu-item company-submenu">Blog</a></li>
-          </ul>
           <li><a href="#">Careers</a></li>
           <li><a href="#">About</a></li>
         </ul>
@@ -96,17 +108,28 @@
       </nav>
     </header>
 
-    <main class="">
+    <main class="main">
       <div class="hero-img-div">
-        <img src="./images/image-hero-mobile.png" class="hero-img" alt="image-hero-mobile" />
+        <img
+          src="./images/image-hero-mobile.png"
+          class="hero-img-mobile"
+          alt="image-hero-mobile"
+        />
+        <img
+          src="./images/image-hero-desktop.png"
+          class="hero-img-desktop"
+          alt="image-hero-desktop"
+        />
       </div>
-      <div class="hero-text">
-        <h1>Make <br />remote work</h1>
+      <div class="hero-text-div">
+        <h1><span>Make </span>remote work</h1>
         <p class="">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <a href="#" class="cta">Learn More</a>
+        <div class="cta-div">
+          <a href="#" class="cta">Learn More</a>
+        </div>
         <figure class="company-logo">
           <img src="./images/client-databiz.svg" alt="client-databiz" />
           <img src="./images/client-audiophile.svg" alt="client-audiophile" />
